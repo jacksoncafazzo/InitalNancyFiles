@@ -1,7 +1,7 @@
 using Nancy;
-using Cars.Objects;
+using Parcels.Objects;
 
-namespace Cars
+namespace Parcels
 {
   public class HomeModule : NancyModule
   {
@@ -10,15 +10,15 @@ namespace Cars
       Get["/form"] = _ => {
         return View["form.html"];
       };
-      Get["/cars"] = _ => {
-        CarVariables myCarVariables = new CarVariables
+      Get["/parcels"] = _ => {
+        ParcelVariables myParcelVariables = new ParcelVariables
         {
-          MakeModel = Request.Query["makeModel"],
-          Price = Request.Query["price"],
-          Miles = Request.Query["miles"],
-          Condition = Request.Query["condition"]
+          Height = Request.Query["height"],
+          Width = Request.Query["width"],
+          Depth = Request.Query["depth"],
+          Weight = Request.Query["weight"]
         };
-        return View["cars.html", myCarVariables];
+        return View["parcels.html", myParcelVariables];
       };
     }
   }

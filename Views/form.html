@@ -2,27 +2,27 @@
 <html>
   <head>
     <meta charset='utf-8'>
-    <title>Mad Libs</title>
+    <title>Parcel Shipping Calculator</title>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
   </head>
   <body>
-    <h1>Fill in the for to add a vehicle!</h1>
-        <form action='/cars'>
+    <h1>Fill in the forms to calculate your parcel volume and shipping cost</h1>
+        <form action='/parcels'>
           <div class='form-group'>
-            <label for='makeModel'>Make and model of car</label>
-            <input id='makeModel' name='makeModel' class='form-control' type='text'>
+            <label for='height'>Parcel height</label>
+            <input id='height' name='height' class='form-control' type='text'>
           </div>
           <div class='form-group'>
-            <label for='miles'>Miles on car</label>
-            <input id='miles' name='miles' class='form-control' type='text'>
+            <label for='width'>Parcel Width</label>
+            <input id='width' name='width' class='form-control' type='text'>
           </div>
           <div class='form-group'>
-            <label for='price'>Price of car</label>
-            <input id='price' name='price' class='form-control' type='text'>
+            <label for='depth'>Parcel Depth</label>
+            <input id='depth' name='depth' class='form-control' type='text'>
           </div>
           <div class='form-group'>
-            <label for='condition'>Condition of car</label>
-            <input id='condition' name='condition' class='form-control' type='text'>
+            <label for='weight'>Parcel Weight</label>
+            <input id='weight' name='weight' class='form-control' type='text'>
           </div>
           <button type='submit' class='btn-primary'>Show me the story!</button>
    </form>

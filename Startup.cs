@@ -3,7 +3,7 @@ using Microsoft.AspNet.Builder;
 using Nancy.Owin;
 using Nancy;
 
-namespace Cars
+namespace Parcels
 {
   public class Startup
   {
