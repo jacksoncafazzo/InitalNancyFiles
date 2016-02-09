@@ -18,6 +18,8 @@ namespace Parcels
           Depth = Request.Query["depth"],
           Weight = Request.Query["weight"]
         };
+        myParcelVariables.SetVolume();
+        myParcelVariables.SetPrice();
         return View["parcels.html", myParcelVariables];
       };
     }
